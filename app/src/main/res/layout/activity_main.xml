@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.varun.calculator.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/displayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/DisplayTextView"/>
+
+        <TextView
+            android:id="@+id/text3"
+            style="@style/DisplayTextView" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/DisplayTextView"/>
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/DisplayTextView"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/displayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+
+            <Button
+                android:id="@+id/seven"
+                android:text="7"
+                style="@style/ButtonRow12"/>
+
+            <Button
+                android:id="@+id/four"
+                android:text="4"
+                style="@style/ButtonRow12"/>
+
+            <Button
+                android:id="@+id/one"
+                android:text="1"
+                style="@style/ButtonRow12"/>
+
+            <Button
+                android:id="@+id/delete"
+                android:text="del"
+                style="@style/ButtonRow12"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_toRightOf="@+id/row1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+
+            <Button
+                android:id="@+id/eight"
+                android:text="8"
+                style="@style/ButtonRow12"/>
+
+            <Button
+                android:id="@+id/five"
+                android:text="5"
+                style="@style/ButtonRow12"/>
+
+            <Button
+                android:id="@+id/two"
+                android:text="2"
+                style="@style/ButtonRow12"/>
+
+            <Button
+                android:id="@+id/zero"
+                android:text="0"
+                style="@style/ButtonRow12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_toRightOf="@+id/row2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+
+            <Button
+                android:id="@+id/nine"
+                android:text="9"
+                style="@style/ButtonRow34"/>
+
+            <Button
+                android:id="@+id/six"
+                android:text="6"
+                style="@style/ButtonRow34"/>
+
+            <Button
+                android:id="@+id/three"
+                android:text="3"
+                style="@style/ButtonRow34"/>
+
+            <Button
+                android:id="@+id/dot"
+                android:text="."
+                style="@style/ButtonRow34"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_toRightOf="@+id/row3"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+
+            <Button
+                android:id="@+id/plus"
+                android:text="+"
+                style="@style/ButtonRow34"/>
+
+            <Button
+                android:id="@+id/minus"
+                android:text="-"
+                style="@style/ButtonRow34"/>
+
+            <Button
+                android:id="@+id/times"
+                android:text="*"
+                style="@style/ButtonRow34"/>
+
+            <Button
+                android:id="@+id/divide"
+                android:text="/"
+                style="@style/ButtonRow34"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row5"
+            android:layout_toRightOf="@+id/row4"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/pop"
+                android:text="Drop"
+                style="@style/ButtonRow5"/>
+
+            <Button
+                android:id="@+id/enter"
+                android:text="Enter"
+                style="@style/ButtonRow5"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
